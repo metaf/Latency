@@ -63,8 +63,8 @@ on a spinning disk, an SSD, and a ramdisk:
 
     time bash -c "for i in \$(seq 1000); do dd if=/dev/zero of=\$i.file bs=1 count=1 conv=fsync; done"
 
-|||
-|-|-|
+|operation | time |
+|-------------------|-------:|
 | hdd, force sync | 38s |
 |hdd, no force sync | 1.8s |
 | ram, force sync | 1.8s |
